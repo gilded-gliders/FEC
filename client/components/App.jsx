@@ -12,7 +12,9 @@ class App extends React.Component{
       list:[],
       targetId: 25167,//reveiws testing. we can initialize with a particular ID
       styles: [],
-      loaded: false
+      loaded: false,
+      productRating: {}
+
     };
     this.fetchGET = this.fetchGET.bind(this);
     this.renderPage = this.renderPage.bind(this);
@@ -42,7 +44,7 @@ class App extends React.Component{
 
   fetchEverything() {
 
-    this.fetchGET('qa', `questions/?product_id=${this.state.targetId}`, 'questions');
+    this.ratingGET('reviews/meta', this.state.targetId);
     //this.fetchGET('products', this.state.targetId, 'list');
   }
 
@@ -62,6 +64,23 @@ class App extends React.Component{
     }
   }
 
+
+  ratingGET(string, id) {
+    axios.get( '/get', {
+      params: {
+        endpoint: `${ string }/?product_id=${ id }`
+      }})
+      .then( res =>{
+        console.log('res data', res.data)
+        this.setState({
+          productRating: res.data,
+          loaded: true,
+        });
+      })
+      .catch( err => console.log );
+  };
+
+
   changeProductId(id) {
     this.setState({
       targetId: id,
@@ -74,9 +93,8 @@ class App extends React.Component{
     if(this.state.loaded) {
       return (
         <div>
-          <Overview id = {this.state.targetId}/>
+          <Overview id = {this.state.targetId} rating = {this.state.productRating}/>
           <RelatedItems id={this.state.targetId} changeProductId={this.changeProductId}/>
-          <QA id={this.state.targetId} questions={this.state.questions}/>
           <Reviews id = { this.state.targetId}/>
         </div>
       )
