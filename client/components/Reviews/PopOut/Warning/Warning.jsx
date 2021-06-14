@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Warning = (props) => {
-  const { warningItems, show } = props;
+  const { listWarning, isShowWarning } = props;
   return (
     <div
       data-testid="WarningContainer"
       className="warningContainer"
     >
       You must enter the following:
-      { warningItems.map((i) => (
+      { listWarning.map((i) => (
         <div
           key={i}
           data-testid="WarningItems"
@@ -25,7 +25,7 @@ const Warning = (props) => {
           data-testid="WarningButton"
           type="button"
           className="warningButton"
-          onClick={show}
+          onClick={isShowWarning}
         >
           Back
         </button>
@@ -37,13 +37,13 @@ const Warning = (props) => {
 };
 
 Warning.propTypes = {
-  warningItems: PropTypes.arrayOf(PropTypes.string),
-  show: PropTypes.func,
+  listWarning: PropTypes.arrayOf(PropTypes.string),
+  isShowWarning: PropTypes.func,
 };
 
 Warning.defaultProps = {
-  warningItems: [],
-  show: () => {},
+  listWarning: [],
+  isShowWarning: () => (1),
 };
 
 export default Warning;

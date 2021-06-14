@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapShot 1`] = `
+<div
+  className="msgBody"
+  data-testid="textHidden"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  tabIndex={0}
+>
+  kenneth@@
+</div>
+`;

@@ -1,24 +1,43 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import PopOut from '../PopOut/PopOut';
+import useButton from './useButton';
 
 const Button = (props) => {
   const {
-    moreReview,
-    addReview,
-    moreBTNshow,
+    rating,
+    getMoreReviews,
+    addUserReview,
+    isMoreReviews,
   } = props;
+  const {
+    handleClickMoreReview,
+    handleClickAddReview,
+    cancelAddReview,
+    isAddReview,
+  } = useButton(getMoreReviews);
+
   return (
     <div
       data-testid="addmoreBtn"
       className="add_moreBTNContainer"
     >
-      {moreBTNshow === true
+      {isAddReview
+        ? (
+          <PopOut
+            addUserReview={addUserReview}
+            data={rating}
+            cancelAddReview={cancelAddReview}
+          />
+        )
+        : null}
+      {isMoreReviews === true
         ? (
           <button
             data-testid="moreBtn"
             className="add_moreBTN"
             type="button"
-            onClick={moreReview}
+            onClick={handleClickMoreReview}
           >
             MORE REVIEWS
           </button>
@@ -27,7 +46,7 @@ const Button = (props) => {
         data-testid="AddBtn"
         className="add_moreBTN"
         type="button"
-        onClick={addReview}
+        onClick={handleClickAddReview}
       >
         ADD A REVIEWS
       </button>
@@ -36,15 +55,17 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  moreBTNshow: PropTypes.bool,
-  addReview: PropTypes.func,
-  moreReview: PropTypes.func,
+  rating: PropTypes.shape({}),
+  isMoreReviews: PropTypes.bool,
+  addUserReview: PropTypes.func,
+  getMoreReviews: PropTypes.func,
 };
 
 Button.defaultProps = {
-  moreBTNshow: true,
-  addReview: () => {},
-  moreReview: () => {},
+  rating: {},
+  isMoreReviews: true,
+  addUserReview: () => (1),
+  getMoreReviews: () => (1),
 };
 
 export default Button;

@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapShot 1`] = `
+<div
+  className="ratingHead"
+  data-testid="stars"
+>
+  <div>
+    <div
+      className="hi fullStar"
+      data-testid="button0"
+      id=" 1"
+      label="fullStar"
+      namew=""
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
+      tabIndex={0}
+    />
+  </div>
+  <div>
+    <div
+      className="hi emptyStar"
+      data-testid="button1"
+      id=" 2"
+      label="emptyStar"
+      namew=""
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
+      tabIndex={0}
+    />
+  </div>
+  <div>
+    <div
+      className="hi emptyStar"
+      data-testid="button2"
+      id=" 3"
+      label="emptyStar"
+      namew=""
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
+      tabIndex={0}
+    />
+  </div>
+  <div>
+    <div
+      className="hi emptyStar"
+      data-testid="button3"
+      id=" 4"
+      label="emptyStar"
+      namew=""
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
+      tabIndex={0}
+    />
+  </div>
+  <div>
+    <div
+      className="hi emptyStar"
+      data-testid="button4"
+      id=" 5"
+      label="emptyStar"
+      namew=""
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
+      tabIndex={0}
+    />
+  </div>
+</div>
+`;

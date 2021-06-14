@@ -23,30 +23,52 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
+<<<<<<< HEAD
+                <span class="strong">96% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>48/50</span>
+=======
                 <span class="strong">48% </span>
                 <span class="quiet">Statements</span>
                 <span class='fraction'>24/50</span>
+>>>>>>> main
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
+<<<<<<< HEAD
+                <span class='fraction'>2/2</span>
+=======
                 <span class='fraction'>0/0</span>
+>>>>>>> main
             </div>
         
             
             <div class='fl pad1y space-right2'>
+<<<<<<< HEAD
+                <span class="strong">50% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/2</span>
+=======
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
                 <span class='fraction'>0/1</span>
+>>>>>>> main
             </div>
         
             
             <div class='fl pad1y space-right2'>
+<<<<<<< HEAD
+                <span class="strong">96% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>48/50</span>
+=======
                 <span class="strong">48% </span>
                 <span class="quiet">Lines</span>
                 <span class='fraction'>24/50</span>
+>>>>>>> main
             </div>
         
             
@@ -55,7 +77,11 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
+<<<<<<< HEAD
+    <div class='status-line high'></div>
+=======
     <div class='status-line low'></div>
+>>>>>>> main
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -110,6 +136,34 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<<<<<<< HEAD
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+=======
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -136,6 +190,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+>>>>>>> main
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -158,6 +213,35 @@
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
 import StarRating from './starrating.jsx';
 &nbsp;
+<<<<<<< HEAD
+const SRList = (props) =&gt;{
+  const { star, per, ratingstar } = props;
+  const click = <span class="fstat-no" title="function not covered" >(event) =&gt;{</span>
+<span class="cstat-no" title="statement not covered" >    ratingstar(event.target.id)</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  return (
+    &lt;div
+      style = { container }&gt;
+      { star.map( i =&gt;{
+        return(
+          &lt;div
+            key = { i }
+            style = { base }&gt;
+            &lt;button
+              style = { text }
+              id = { i }
+              onClick = { click }&gt;
+                { i } Stars
+            &lt;/button&gt;
+            &lt;StarRating
+              per = { per[ i - 1 ] }/&gt;
+          &lt;/div&gt;
+        )
+      })}
+    &lt;/div&gt;
+  )
+}
+=======
 const SRList = <span class="fstat-no" title="function not covered" >(props) =&gt;{</span>
 <span class="cstat-no" title="statement not covered" >  const { star, per, ratingstar } = props;</span>
 <span class="cstat-no" title="statement not covered" >  const click = (event) =&gt;{</span>
@@ -185,6 +269,7 @@ const SRList = <span class="fstat-no" title="function not covered" >(props) =&gt
 <span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
 <span class="cstat-no" title="statement not covered" >  )</span>
 <span class="cstat-no" title="statement not covered" >}</span>
+>>>>>>> main
 &nbsp;
 export default SRList;
 &nbsp;
@@ -211,7 +296,11 @@ const container = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
+<<<<<<< HEAD
+                at Fri Jun 11 2021 20:55:34 GMT-0700 (Pacific Daylight Time)
+=======
                 at Mon Jun 14 2021 10:43:57 GMT-0700 (Pacific Daylight Time)
+>>>>>>> main
             </div>
         </div>
         <script src="../prettify.js"></script>

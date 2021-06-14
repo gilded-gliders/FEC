@@ -23,9 +23,15 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
+<<<<<<< HEAD
+                <span class="strong">34.33% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>23/67</span>
+=======
                 <span class="strong">30.99% </span>
                 <span class="quiet">Statements</span>
                 <span class='fraction'>22/71</span>
+>>>>>>> main
             </div>
         
             
@@ -44,9 +50,15 @@
         
             
             <div class='fl pad1y space-right2'>
+<<<<<<< HEAD
+                <span class="strong">34.33% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>23/67</span>
+=======
                 <span class="strong">30.99% </span>
                 <span class="quiet">Lines</span>
                 <span class='fraction'>22/71</span>
+>>>>>>> main
             </div>
         
             
@@ -124,12 +136,17 @@
 <a name='L65'></a><a href='#L65'>65</a>
 <a name='L66'></a><a href='#L66'>66</a>
 <a name='L67'></a><a href='#L67'>67</a>
+<<<<<<< HEAD
+<a name='L68'></a><a href='#L68'>68</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+=======
 <a name='L68'></a><a href='#L68'>68</a>
 <a name='L69'></a><a href='#L69'>69</a>
 <a name='L70'></a><a href='#L70'>70</a>
 <a name='L71'></a><a href='#L71'>71</a>
 <a name='L72'></a><a href='#L72'>72</a>
 <a name='L73'></a><a href='#L73'>73</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+>>>>>>> main
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -181,11 +198,14 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<<<<<<< HEAD
+=======
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+>>>>>>> main
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -200,6 +220,61 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<<<<<<< HEAD
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import PropTypes from 'prop-types';
+import Top from './rttop';
+import Message from './message';
+import SRList from './srlist';
+import Characteristics from './characteristics';
+import { Data } from './data';
+&nbsp;
+const Rating = <span class="fstat-no" title="function not covered" >(props) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  const { rating, ratingstar } = props;</span>
+<span class="cstat-no" title="statement not covered" >  const obj = { ...rating.ratings };</span>
+<span class="cstat-no" title="statement not covered" >  const key = Object.keys(obj).sort();</span>
+<span class="cstat-no" title="statement not covered" >  const biggest = Number(key[key.length - 1]);</span>
+<span class="cstat-no" title="statement not covered" >  const num = 1;</span>
+<span class="cstat-no" title="statement not covered" >  const keyArray = [...Array(biggest)].map(() =&gt; (String(num + 1)));</span>
+<span class="cstat-no" title="statement not covered" >  const valueArray = keyArray.map((i) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (obj[i] !== undefined) { Number(obj[i]); }</span>
+<span class="cstat-no" title="statement not covered" >    return 0;</span>
+<span class="cstat-no" title="statement not covered" >  });</span>
+<span class="cstat-no" title="statement not covered" >  const size = key.reduce((sum, i) =&gt; (sum + Number(obj[i])), 0);</span>
+<span class="cstat-no" title="statement not covered" >  const perArray = valueArray.map((i) =&gt; Math.floor((i / size) * 100));</span>
+<span class="cstat-no" title="statement not covered" >  const total = key.reduce((sum, i) =&gt; (sum + Number(i) * Number(obj[i])), 0);</span>
+<span class="cstat-no" title="statement not covered" >  const ave = Math.round((total / size) * 10) / 10;</span>
+<span class="cstat-no" title="statement not covered" >  const tNum = Number(rating.recommended.true);</span>
+<span class="cstat-no" title="statement not covered" >  const fNum = Number(rating.recommended.false);</span>
+<span class="cstat-no" title="statement not covered" >  const rAve = Math.floor((tNum / (tNum + fNum)) * 100);</span>
+<span class="cstat-no" title="statement not covered" >  const text = `${rAve}% of reviews recommend this product`;</span>
+<span class="cstat-no" title="statement not covered" >  const c = 'characteristics';</span>
+<span class="cstat-no" title="statement not covered" >  const cKey = Object.keys(rating[c]);</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div style={style}&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;Top rating={ave} /&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;Message</span>
+<span class="cstat-no" title="statement not covered" >        text={text}</span>
+<span class="cstat-no" title="statement not covered" >        style={msg}</span>
+<span class="cstat-no" title="statement not covered" >      /&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;SRList</span>
+<span class="cstat-no" title="statement not covered" >        star={keyArray.reverse()}</span>
+<span class="cstat-no" title="statement not covered" >        ratingstar={ratingstar}</span>
+<span class="cstat-no" title="statement not covered" >        per={perArray.reverse()}</span>
+<span class="cstat-no" title="statement not covered" >      /&gt;</span>
+<span class="cstat-no" title="statement not covered" >      {cKey.map((i, index) =&gt; (</span>
+<span class="cstat-no" title="statement not covered" >        &lt;Characteristics</span>
+<span class="cstat-no" title="statement not covered" >          key={index}</span>
+<span class="cstat-no" title="statement not covered" >          array={Data[i]}</span>
+<span class="cstat-no" title="statement not covered" >          name={i}</span>
+<span class="cstat-no" title="statement not covered" >          value={rating[c][i].value}</span>
+<span class="cstat-no" title="statement not covered" >        /&gt;</span>
+<span class="cstat-no" title="statement not covered" >      ))}</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >  );</span>
+<span class="cstat-no" title="statement not covered" >};</span>
+=======
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
 import Top from './rttop.jsx';
@@ -258,10 +333,23 @@ const Rating = <span class="fstat-no" title="function not covered" >(props) =&gt
 <span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
 <span class="cstat-no" title="statement not covered" >  )</span>
 <span class="cstat-no" title="statement not covered" >}</span>
+>>>>>>> main
 &nbsp;
 export default Rating;
 &nbsp;
 const style = {
+<<<<<<< HEAD
+  width: '40%',
+  marginTop: '20px',
+};
+&nbsp;
+const msg = {
+  fontSize: '10px',
+  marginTop: '10px',
+  justifyContent: 'left',
+  margin: '10px',
+};
+=======
   width:'40%',
   marginTop:'20px'
 }
@@ -273,6 +361,7 @@ const msg = {
   margin: '10px',
 }
 &nbsp;
+>>>>>>> main
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -280,7 +369,11 @@ const msg = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
+<<<<<<< HEAD
+                at Thu Jun 10 2021 20:03:12 GMT-0700 (Pacific Daylight Time)
+=======
                 at Mon Jun 14 2021 10:43:57 GMT-0700 (Pacific Daylight Time)
+>>>>>>> main
             </div>
         </div>
         <script src="../prettify.js"></script>

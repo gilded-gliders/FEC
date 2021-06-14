@@ -11,23 +11,21 @@ import {
 } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Button from './Button';
-import Reviews from '../Reviews';
-import Rbase from '../rbase';
+import { testData1 } from '../RatingTestData';
 
 afterEach(cleanup);
 
 describe('render correct', () => {
-  afterEach(cleanup);
   it('when moreBTNshow be true addBTN should show', () => {
     const test1 = true;
-    render(<Button moreBTNshow={test1} />);
+    render(<Button isMoreReviews={test1} />);
     const test = screen.queryByText('MORE REVIEWS');
     expect(test).toBeInTheDocument();
   });
 
   it('when moreBTNshow be fale addBTN should not show', () => {
     const test2 = false;
-    render(<Button moreBTNshow={test2} />);
+    render(<Button isMoreReviews={test2} />);
     const test = screen.queryByText('MORE REVIEWS');
     expect(test).not.toBeInTheDocument();
   });
@@ -35,13 +33,12 @@ describe('render correct', () => {
 
 describe('click should trigger func', () => {
   const test1 = true;
-  const test2 = false;
   it('when moreBTNshow be true, moreBTN should be able to trigger', () => {
     const testfunc = jest.fn();
     const { getByTestId } = render(
       <Button
-        moreBTNshow={test1}
-        moreReview={testfunc}
+        isMoreReviews={test1}
+        getMoreReviews={testfunc}
       />,
     );
     fireEvent.click(getByTestId('moreBtn'));
@@ -50,45 +47,48 @@ describe('click should trigger func', () => {
     expect(testfunc).toHaveBeenCalledTimes(2);
   });
 
-  it('when moreBTNshow be true, AddBTN should be able to trigger', () => {
+  it('AddBTN should be able to trigger', () => {
     const testfunc = jest.fn();
     const { getByTestId } = render(
       <Button
-        moreBTNshow={test1}
-        addReview={testfunc}
+        isMoreReviews={test1}
+        addUserReview={testfunc}
+        rating={testData1}
       />,
     );
     fireEvent.click(getByTestId('AddBtn'));
-    expect(testfunc).toHaveBeenCalledTimes(1);
-    fireEvent.click(getByTestId('AddBtn'));
-    expect(testfunc).toHaveBeenCalledTimes(2);
-  });
-
-  it('when moreBTNshow be false, AddBTN should be able to trigger', () => {
-    const addReview = jest.fn();
-    const { getByTestId } = render(
-      <Button
-        moreBTNshow={test2}
-        addReview={addReview}
-      />,
-    );
-    fireEvent.click(getByTestId('AddBtn'));
-    expect(addReview).toHaveBeenCalledTimes(1);
-    fireEvent.click(getByTestId('AddBtn'));
-    expect(addReview).toHaveBeenCalledTimes(2);
+    expect(getByTestId('popout')).toBeInTheDocument();
   });
 });
 
-it('when moreBTNshow be false, AddBTN should be able to trigger', () => {
-  // jest.enableAutomock();
-  // jest.spyOn(Reviews.moreReview);
+it('when moreBTNshow be true, AddBTN should be able to trigger', () => {
   const testfunc = jest.fn();
+  const test = true;
   const { getByTestId } = render(
     <Button
-      moreBTNshow={true}
-      moreReview={() => {testfunc}}
+      isMoreReviews={test}
+      getMoreReviews={testfunc}
     />,
   );
   fireEvent.click(getByTestId('moreBtn'));
   expect(testfunc).toHaveBeenCalledTimes(1);
+});
+
+it('should have default addUserReview and moreReview', () => {
+  expect(Button.defaultProps.addUserReview()).toBeDefined();
+  expect(Button.defaultProps.getMoreReviews()).toBeDefined();
+});
+
+it('matches snapShot', () => {
+  const test = true;
+  const test1 = jest.fn();
+  const test2 = jest.fn();
+  const tree = renderer.create(
+    <Button
+      moreBTNshow={test}
+      addReview={test1}
+      moreReview={test2}
+    />,
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
 });

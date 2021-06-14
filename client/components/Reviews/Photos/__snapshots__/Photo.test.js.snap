@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapShot 1`] = `
+<div
+  className="photoContainer"
+  data-testid="photos"
+>
+  <div
+    data-testid="img"
+  >
+    <img
+      alt=""
+      className="photos"
+      src="a"
+    />
+  </div>
+  <div
+    data-testid="img"
+  >
+    <img
+      alt=""
+      className="photos"
+      src="b"
+    />
+  </div>
+  <div
+    data-testid="img"
+  >
+    <img
+      alt=""
+      className="photos"
+      src="c"
+    />
+  </div>
+</div>
+`;

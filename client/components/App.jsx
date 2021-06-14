@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Overview from './Overview/Overview.jsx';
 import RelatedItems from './RelatedItems/RelatedItems.jsx';
-import Reviews from './Reviews/Reviews.jsx';
+import Reviews from './Reviews/Reviews1.jsx';
 import QA from './QA/QA.jsx';
 
 class App extends React.Component{
@@ -112,7 +112,7 @@ class App extends React.Component{
       <div>
         {this.renderPage()}
         <button onClick = {this.testing}> TESTING </button>
-        {/* <Reviews id ={this.state.targetId}/> */}
+        <Reviews id ={this.state.targetId}/>
       </div>
     )
   }

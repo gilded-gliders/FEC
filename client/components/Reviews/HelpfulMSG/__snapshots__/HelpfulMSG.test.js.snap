@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapShot 1`] = `
+<div>
+  <button
+    className="helpfulButton"
+    data-testid="helpfulButton"
+    onClick={[Function]}
+    type="button"
+  >
+    countHelpful? Yes (23) 
+  </button>
+  <button
+    className="helpfulButton"
+    data-testid="nothelpfulButton"
+    onClick={[Function]}
+    type="button"
+  >
+     No (52) 
+  </button>
+  <button
+    className="helpfulButton"
+    data-testid="report"
+    onClick={[Function]}
+    type="button"
+  >
+     | report
+  </button>
+</div>
+`;

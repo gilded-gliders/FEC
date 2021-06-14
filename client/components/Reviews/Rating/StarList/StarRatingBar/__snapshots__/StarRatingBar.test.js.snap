@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapShot 1`] = `
+<div
+  className="starRatingBarBase"
+  data-testid="starRatingBar"
+>
+  <div
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />
+</div>
+`;

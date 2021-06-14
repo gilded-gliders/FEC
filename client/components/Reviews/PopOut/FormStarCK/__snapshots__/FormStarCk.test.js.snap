@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapShot 1`] = `
+<div
+  className="topSmallContainer"
+  data-testid="formStarCK"
+>
+  <div>
+    Width
+  </div>
+  <div
+    className="ratingHead"
+    data-testid="stars"
+  >
+    <div>
+      <div
+        className="formStar fullStar"
+        data-testid="button0"
+        id="Width 1"
+        label="fullStar"
+        namew="Width"
+        onClick={[MockFunction]}
+        onKeyPress={[MockFunction]}
+        role="button"
+        tabIndex={0}
+      />
+    </div>
+    <div>
+      <div
+        className="formStar emptyStar"
+        data-testid="button1"
+        id="Width 2"
+        label="emptyStar"
+        namew="Width"
+        onClick={[MockFunction]}
+        onKeyPress={[MockFunction]}
+        role="button"
+        tabIndex={0}
+      />
+    </div>
+    <div>
+      <div
+        className="formStar emptyStar"
+        data-testid="button2"
+        id="Width 3"
+        label="emptyStar"
+        namew="Width"
+        onClick={[MockFunction]}
+        onKeyPress={[MockFunction]}
+        role="button"
+        tabIndex={0}
+      />
+    </div>
+    <div>
+      <div
+        className="formStar emptyStar"
+        data-testid="button3"
+        id="Width 4"
+        label="emptyStar"
+        namew="Width"
+        onClick={[MockFunction]}
+        onKeyPress={[MockFunction]}
+        role="button"
+        tabIndex={0}
+      />
+    </div>
+    <div>
+      <div
+        className="formStar emptyStar"
+        data-testid="button4"
+        id="Width 5"
+        label="emptyStar"
+        namew="Width"
+        onClick={[MockFunction]}
+        onKeyPress={[MockFunction]}
+        role="button"
+        tabIndex={0}
+      />
+    </div>
+  </div>
+  <div
+    className="formText"
+    data-testid="formStarCKText"
+  >
+    Too narrow
+  </div>
+</div>
+`;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapShot 1`] = `
+<div
+  className="add_moreBTNContainer"
+  data-testid="addmoreBtn"
+>
+  <button
+    className="add_moreBTN"
+    data-testid="moreBtn"
+    onClick={[Function]}
+    type="button"
+  >
+    MORE REVIEWS
+  </button>
+  <button
+    className="add_moreBTN"
+    data-testid="AddBtn"
+    onClick={[Function]}
+    type="button"
+  >
+    ADD A REVIEWS
+  </button>
+</div>
+`;

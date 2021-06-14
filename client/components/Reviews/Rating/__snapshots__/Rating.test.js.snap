@@ -1,0 +1,464 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapShot 1`] = `
+<div
+  className="rating"
+  data-testid="rating"
+>
+  <div
+    className="ratingHead"
+    data-testid="head"
+  >
+    3.8
+    <div
+      className="ratingHead"
+      data-testid="stars"
+    >
+      <div>
+        <div
+          className="ratingStar fullStar"
+          data-testid="button0"
+          id=" 1"
+          label="fullStar"
+          namew=""
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+          tabIndex={0}
+        />
+      </div>
+      <div>
+        <div
+          className="ratingStar fullStar"
+          data-testid="button1"
+          id=" 2"
+          label="fullStar"
+          namew=""
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+          tabIndex={0}
+        />
+      </div>
+      <div>
+        <div
+          className="ratingStar fullStar"
+          data-testid="button2"
+          id=" 3"
+          label="fullStar"
+          namew=""
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+          tabIndex={0}
+        />
+      </div>
+      <div>
+        <div
+          className="ratingStar qThreeStar"
+          data-testid="button3"
+          id=" 4"
+          label="qThreeStar"
+          namew=""
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+          tabIndex={0}
+        />
+      </div>
+      <div>
+        <div
+          className="ratingStar emptyStar"
+          data-testid="button4"
+          id=" 5"
+          label="emptyStar"
+          namew=""
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+          tabIndex={0}
+        />
+      </div>
+    </div>
+  </div>
+  <h5
+    data-testid="text"
+  >
+    75% of reviews recommend this product
+  </h5>
+  <div
+    data-testid="starListR"
+  >
+    <div
+      className="starListContainer"
+      data-testid="starList"
+    >
+      <div>
+        <div
+          className="starListBase"
+        >
+          <button
+            className="starListText"
+            data-testid="startListButton5"
+            id="5"
+            onClick={[Function]}
+            type="button"
+          >
+            5 Stars
+          </button>
+          <div
+            className="starRatingBarBase"
+            data-testid="starRatingBar"
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "green",
+                  "border": "5px solid green",
+                  "width": "50%",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="starListBase"
+        >
+          <button
+            className="starListText"
+            data-testid="startListButton4"
+            id="4"
+            onClick={[Function]}
+            type="button"
+          >
+            4 Stars
+          </button>
+          <div
+            className="starRatingBarBase"
+            data-testid="starRatingBar"
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "green",
+                  "border": "5px solid green",
+                  "width": "25%",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="starListBase"
+        >
+          <button
+            className="starListText"
+            data-testid="startListButton3"
+            id="3"
+            onClick={[Function]}
+            type="button"
+          >
+            3 Stars
+          </button>
+          <div
+            className="starRatingBarBase"
+            data-testid="starRatingBar"
+          >
+            <div
+              style={
+                Object {
+                  "display": "none",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="starListBase"
+        >
+          <button
+            className="starListText"
+            data-testid="startListButton2"
+            id="2"
+            onClick={[Function]}
+            type="button"
+          >
+            2 Stars
+          </button>
+          <div
+            className="starRatingBarBase"
+            data-testid="starRatingBar"
+          >
+            <div
+              style={
+                Object {
+                  "display": "none",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="starListBase"
+        >
+          <button
+            className="starListText"
+            data-testid="startListButton1"
+            id="1"
+            onClick={[Function]}
+            type="button"
+          >
+            1 Stars
+          </button>
+          <div
+            className="starRatingBarBase"
+            data-testid="starRatingBar"
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "green",
+                  "border": "5px solid green",
+                  "width": "25%",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="characteristics"
+  >
+    <div
+      className="charaContainer"
+      data-testid="chara"
+    >
+      Comfort
+      <div
+        className="charaBar"
+      >
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          style={
+            Object {
+              "bottom": "10%",
+              "left": "55%",
+              "position": "absolute",
+            }
+          }
+        >
+          <div
+            className="charaBarPoint"
+          />
+        </div>
+      </div>
+      <div
+        className="barTextContainer"
+      >
+        <div
+          className="barText"
+        >
+          Uncomfortable
+        </div>
+        <div
+          className="barText"
+        >
+          Perfect
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="characteristics"
+  >
+    <div
+      className="charaContainer"
+      data-testid="chara"
+    >
+      Quality
+      <div
+        className="charaBar"
+      >
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          style={
+            Object {
+              "bottom": "10%",
+              "left": "40%",
+              "position": "absolute",
+            }
+          }
+        >
+          <div
+            className="charaBarPoint"
+          />
+        </div>
+      </div>
+      <div
+        className="barTextContainer"
+      >
+        <div
+          className="barText"
+        >
+          Poor
+        </div>
+        <div
+          className="barText"
+        >
+          Perfect
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="characteristics"
+  >
+    <div
+      className="charaContainer"
+      data-testid="chara"
+    >
+      Size
+      <div
+        className="charaBar"
+      >
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          style={
+            Object {
+              "bottom": "10%",
+              "left": "45%",
+              "position": "absolute",
+            }
+          }
+        >
+          <div
+            className="charaBarPoint"
+          />
+        </div>
+      </div>
+      <div
+        className="barTextContainer"
+      >
+        <div
+          className="barText"
+        >
+          A size too small
+        </div>
+        <div
+          className="barText"
+        >
+          A size too wide
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="characteristics"
+  >
+    <div
+      className="charaContainer"
+      data-testid="chara"
+    >
+      Width
+      <div
+        className="charaBar"
+      >
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          className="charaSmallBar"
+        />
+        <div
+          style={
+            Object {
+              "bottom": "10%",
+              "left": "65%",
+              "position": "absolute",
+            }
+          }
+        >
+          <div
+            className="charaBarPoint"
+          />
+        </div>
+      </div>
+      <div
+        className="barTextContainer"
+      >
+        <div
+          className="barText"
+        >
+          Too narrow
+        </div>
+        <div
+          className="barText"
+        >
+          Too wide
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

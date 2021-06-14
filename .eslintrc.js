@@ -1,9 +1,21 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "node": true,
-        "jest": true,
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+    jest: true,
+  },
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
     ecmaVersion: 2018,
     sourceType: 'module',
@@ -12,7 +24,6 @@ module.exports = {
     'react',
   ],
   rules: {
-    // without this rule test part render() will get redling;
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
 };

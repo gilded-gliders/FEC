@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapShot 1`] = `
+<div
+  className="reviewListHeader"
+>
+  251 reviews, sorted by
+  <select
+    className="reviewListHeader reviewListSort"
+    data-testid="select"
+    onChange={[Function]}
+  >
+    <option
+      data-testid="option"
+    >
+      relevant
+    </option>
+    <option
+      data-testid="option"
+    >
+      newest
+    </option>
+    <option
+      data-testid="option"
+    >
+      helpful
+    </option>
+  </select>
+</div>
+`;

@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapShot 1`] = `
+<div
+  className="msgListBase"
+  data-testid="msgListBase"
+>
+  <div
+    className="msgContainer"
+  >
+    <div
+      className="msgHeader"
+      data-testid="msgHeader"
+    >
+      <div
+        className="ratingHead"
+        data-testid="stars"
+      >
+        <div>
+          <div
+            className="msgStar emptyStar"
+            data-testid="button0"
+            id=" 1"
+            label="emptyStar"
+            namew=""
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          />
+        </div>
+        <div>
+          <div
+            className="msgStar emptyStar"
+            data-testid="button1"
+            id=" 2"
+            label="emptyStar"
+            namew=""
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          />
+        </div>
+        <div>
+          <div
+            className="msgStar emptyStar"
+            data-testid="button2"
+            id=" 3"
+            label="emptyStar"
+            namew=""
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          />
+        </div>
+        <div>
+          <div
+            className="msgStar emptyStar"
+            data-testid="button3"
+            id=" 4"
+            label="emptyStar"
+            namew=""
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          />
+        </div>
+        <div>
+          <div
+            className="msgStar emptyStar"
+            data-testid="button4"
+            id=" 5"
+            label="emptyStar"
+            namew=""
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex={0}
+          />
+        </div>
+      </div>
+      <div>
+        
+        ,
+         
+        lid Date
+      </div>
+    </div>
+    <div
+      className="msgSummary "
+    />
+    <div
+      className="msgBody"
+      data-testid="textHidden"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      
+    </div>
+    <div
+      className="msgBody"
+    >
+      ✓ I recommend this product
+    </div>
+    <div
+      className="msgResponseContainer"
+    >
+      Response:
+      <br />
+      <div
+        className="msgResponse"
+      >
+        hi
+      </div>
+    </div>
+    <div
+      className="photoContainer"
+      data-testid="photos"
+    >
+      <div
+        data-testid="img"
+      >
+        <img
+          alt=""
+          className="photos"
+        />
+      </div>
+    </div>
+    <div>
+      <button
+        className="helpfulButton"
+        data-testid="helpfulButton"
+        onClick={[Function]}
+        type="button"
+      >
+        countHelpful? Yes (0) 
+      </button>
+      <button
+        className="helpfulButton"
+        data-testid="nothelpfulButton"
+        onClick={[Function]}
+        type="button"
+      >
+         No (0) 
+      </button>
+      <button
+        className="helpfulButton"
+        data-testid="report"
+        onClick={[Function]}
+        type="button"
+      >
+         | report
+      </button>
+    </div>
+  </div>
+</div>
+`;
