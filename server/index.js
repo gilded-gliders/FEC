@@ -22,12 +22,7 @@ app.use('/get', (req, res) => {
   });
 });
 
-<<<<<<< HEAD
-app.get('/get', (req, res) => {
-  //console.log('this is req: ', req, 'this is query: ', req.query);
-=======
 app.get('/post/review', (req, res) => {
->>>>>>> main
   api.hrapi(`${req.query.endpoint}`, (err, data) => {
     if (err) {
       res.status(404).send(err);
