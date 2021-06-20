@@ -62,6 +62,7 @@ class Description extends React.Component {
     })
 
     localStorage.setItem('item', JSON.stringify(copy));
+    alert('Item added to cart!')
 
 
   }
