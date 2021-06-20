@@ -21,7 +21,6 @@ class App extends React.Component {
       isSearch: false,
       listSearch:[],
       listCurrentItem:[],
-      queryURL:'',
     };
     this.renderPage = this.renderPage.bind(this);
     this.changeProductId = this.changeProductId.bind(this);
@@ -33,9 +32,6 @@ class App extends React.Component {
   componentDidMount(){
     var query = window.location.search
     var queryId = query.slice(query.length - 5);
-    var queryNum = query.lastIndexOf(':');
-    var queryURL = query.slice(0,queryNum);
-
     var productId = !queryId ? 25167: Number(queryId);
     let data = sessionStorage.getItem('list');
     let data1 = [];
@@ -70,7 +66,6 @@ class App extends React.Component {
           loaded: true,
           isSearch: bool,
           listSearch:listSearch,
-          queryURL:queryURL,
         },()=>{
           if(data1.length <= 2000) {
             axios.get(`/getAllItems/`)
@@ -88,7 +83,7 @@ class App extends React.Component {
   }
 
   changeProductId(id) {
-    window.location.assign(`${this.state.queryURL}/?product_id=${id}`)
+    window.location.assign(`?product_id=${id}`)
   }
 
   search(event){
@@ -116,7 +111,7 @@ class App extends React.Component {
   idGet(event){
     const id = event.target.id;
     sessionStorage.setItem('isSearch',JSON.stringify({isSearch:false}));
-    window.location.assign(`${this.state.queryURL}/?product_id=${id}`)
+    window.location.assign(`?product_id=${id}`)
   }
 
   renderPage() {
